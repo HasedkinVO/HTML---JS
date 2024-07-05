@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>Пример с диалоговыми окнами</title>
+</head>
+<body>
+
+<script>
+    let userName = prompt("Введите сюда своё имя", "Введите имя");
+
+    // Вывод имени в окне браузера
+    if (userName != null) {
+        alert("Ваше имя: " + userName);
+    }
+
+    let startOver = confirm("Начать заново?");
+    if (startOver) {
+        let continueResponse = confirm("Не надоело?");
+        if (continueResponse) {
+            alert("Давайте продолжим!");
+        } else {
+            alert("Ну и правильно!");
+        }
+    } else {
+        alert("До свидания!");
+    }
+</script>
+
+</body>
+</html>

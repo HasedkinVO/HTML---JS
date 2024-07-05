@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Школьные предметы</title>
+<script language="JavaScript">
+function splitSubjects() {
+    var schoolSubjects = ["Математика", "Физика", "Химия", "Информатика", "Литература", "История", "Иностранный язык"];
+    
+    var exactSciences = schoolSubjects.slice(0, 4);
+    var humanitarianSciences = schoolSubjects.slice(4);
+
+    document.write("<h2>Предметы точных наук:</h2>");
+    document.write(exactSciences.join(", ") + "<br>");
+
+    document.write("<h2>Предметы гуманитарных наук:</h2>");
+    document.write(humanitarianSciences.join(", ") + "<br>");
+}
+
+</script>
+</head>
+<body>
+
+<script>
+splitSubjects();
+</script>
+
+</body>
+</html>

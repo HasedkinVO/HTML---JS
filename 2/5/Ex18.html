@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>simple animation</title>
+<script language="JavaScript">
+function moveTxt()
+{
+if (anil.style.pixelTop < 500)
+{
+anil.style.pixelTop +=50;
+setTimeout("moveTxt()", 500);
+}
+}
+</script>
+</head>
+<body onLoad="moveTxt()">
+<div id="anil" style="position:absolute; left:10; top:10">
+Текст
+</div>
+</body>
+</html>

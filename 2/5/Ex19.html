@@ -1,0 +1,20 @@
+<head>
+<title>anima1</title>
+<script language="JavaScript">
+function moveTxt()
+{
+if (anim.style.pixelTop <500)
+{
+anim.style.pixelTop +=2;
+anim.style.pixelRight +=2;
+setTimeout("moveTxt()", 50);
+}
+}
+</script>
+</head>
+<body onLoad="moveTxt()">
+<div id="anim" style="position:absolute; right:10; top:10">
+Текст, шагом марш!
+</div>
+</body>
+</html>
